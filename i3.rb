@@ -23,6 +23,7 @@ class I3 < Formula
   depends_on "yajl"
   depends_on :x11
   depends_on "libxkbcommon"
+  depends_on "i3status" => :optional
 
   def install
     # In src/i3.mk, precompiled headers are used if CC=clang, however superenv
