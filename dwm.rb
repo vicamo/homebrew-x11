@@ -6,10 +6,10 @@ class Dwm < Formula
   head "http://git.suckless.org/dwm", :using => :git
 
   bottle do
-    cellar :any
-    sha1 "3d1f85077637d227005f7c22273441ec7eb4ded1" => :mavericks
-    sha1 "ef7ce38daa07fe707df2454a3ddf4701a4cebfe7" => :mountain_lion
-    sha1 "29c1feef59b6c7da94b096a9452a1e402037fba3" => :lion
+    cellar :any_skip_relocation
+    sha256 "282b0c844645209037152f2219861960c31c476158835b1992905737e6d67fec" => :el_capitan
+    sha256 "d6075b541f94f345c5b47ac85d07420bc2e9df895c5089360a252be37bca511e" => :yosemite
+    sha256 "af8a23a31af9503d57891be8baf20ae40467ae8c6366d6ec9bbbe960025e0a18" => :mavericks
   end
 
   depends_on :x11
