@@ -1,4 +1,5 @@
 class Xspringies < Formula
+  desc "Interactive 2D mass/spring simulation system"
   homepage "http://www.cs.rutgers.edu/~decarlo/software.html"
   url "http://www.cs.rutgers.edu/~decarlo/software/xspringies-1.12.tar.Z"
   sha256 "08a3e9f60d1f1e15d38d62dd62baab18f6ad57ee139b0ef41452be66e4ad6a28"
