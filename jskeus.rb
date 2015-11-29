@@ -5,6 +5,13 @@ class Jskeus < Formula
   sha256 "038d394438dff837b9268dbec48063b33532669d5786201e2e67433fade371f1"
   head "https://github.com/euslisp/jskeus.git"
 
+  bottle do
+    cellar :any
+    sha256 "fae0d5f7d1977b2d713d2809e4aed4de7c8a49c5fc1ab5bc5067107832b9ace4" => :el_capitan
+    sha256 "17036543131a28767293950f64fe16946abc89bba1f54e1662cc878960320f85" => :yosemite
+    sha256 "b49d9db1bdfc277e87c75f341ee2ca022a7a26d4c966c0311ad36e12a3fafb06" => :mavericks
+  end
+
   depends_on :x11
   depends_on "jpeg"
   depends_on "libpng"
