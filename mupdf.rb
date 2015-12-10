@@ -1,7 +1,7 @@
 class Mupdf < Formula
   homepage "http://mupdf.com"
-  url "http://mupdf.com/downloads/mupdf-1.7a-source.tar.gz"
-  sha256 "8c035ffa011fc44f8a488f70da3e6e51889508bbf66fe6b90a63e0cfa6c17d1c"
+  url "http://mupdf.com/downloads/archive/mupdf-1.8-source.tar.gz"
+  sha256 "a2a3c64d8b24920f87cf4ea9339a25abf7388496440f13b37482d1403c33c206"
 
   bottle do
     cellar :any
@@ -23,6 +23,7 @@ class Mupdf < Formula
            "verbose=yes",
            "CC=#{ENV.cc}",
            "prefix=#{prefix}"
+    bin.install_symlink "mutool" => "mudraw"
   end
 
   test do
