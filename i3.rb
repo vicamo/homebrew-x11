@@ -23,7 +23,6 @@ class I3 < Formula
   depends_on "yajl"
   depends_on :x11
   depends_on "libxkbcommon"
-  depends_on "i3status" => :optional
 
   def install
     # In src/i3.mk, precompiled headers are used if CC=clang, however superenv
@@ -35,6 +34,6 @@ class I3 < Formula
   test do
     result = shell_output("#{bin}/i3 -v")
     result.force_encoding("UTF-8") if result.respond_to?(:force_encoding)
-    assert_match /#{version}/, result
+    assert_match "#{version}", result
   end
 end
