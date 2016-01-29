@@ -8,9 +8,9 @@ class Gobby < Formula
   head "git://git.0x539.de/git/gobby.git"
 
   bottle do
-    sha256 "a60a3212c50e11f1a3fb1997bb2d9105d16b3e70c453a7c9615e140cd427926f" => :el_capitan
-    sha256 "293979a8259880fc1652425af13df03bd31eba70fa7e75cf5453e6c959c90954" => :yosemite
-    sha256 "471b70aa53d01f8c545876d52380eafbbafe34626bdaca33c9f3d7ec4d230cc3" => :mavericks
+    sha256 "ed17083975afc135e84374dd4c9577c51707186385dd6f5cef1844cb6a02a36e" => :el_capitan
+    sha256 "d3aa8c45ff49e481056abf2b8ec104cef38d0e6d6202cdb72c6494942e4221b8" => :yosemite
+    sha256 "08c31144c14d02d3610d6106d65091ea89f3854d1882235230596de5583d8022" => :mavericks
   end
 
   depends_on "pkg-config" => :build
